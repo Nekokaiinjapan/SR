@@ -15,6 +15,7 @@ def inline(text: str) -> str:
     text = html.escape(text, quote=False)
     # inline code first so its content is not touched by other rules
     text = re.sub(r"`([^`]+)`", r"<code>\1</code>", text)
+    text = re.sub(r"!\[([^\]]*)\]\(([^)]+)\)", r'<img alt="\1" src="\2">', text)
     text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', text)
     text = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", text)
     text = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"<em>\1</em>", text)
@@ -55,6 +56,13 @@ def convert(md: str) -> str:
 
         if not line.strip():
             flush_para()
+            i += 1
+            continue
+
+        # raw HTML block (e.g. a centred <img>): pass through untouched
+        if line.lstrip().startswith("<") and line.rstrip().endswith(">"):
+            flush_para()
+            out.append(line.strip())
             i += 1
             continue
 

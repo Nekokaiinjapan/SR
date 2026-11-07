@@ -5,6 +5,10 @@
 纯本地、离线、无需联网的图片超分 App。ncnn + Vulkan（不可用时回落 CPU），
 模型打包进 APK，装完即用。
 
+<p align="center">
+  <img src="docs/screenshot.jpg" width="360" alt="界面截图">
+</p>
+
 ## 功能
 
 - 四个内置模型：`animevideo x2/x3/x4`（快）与 `anime6B x4`（画质）
