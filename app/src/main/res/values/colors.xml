@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ink">#2B2140</color>
+    <color name="ink_muted">#7A6E8F</color>
+    <color name="purple">#7C4DFF</color>
+    <color name="purple_deep">#5B2ED6</color>
+    <color name="purple_soft">#F4ECFF</color>
+    <color name="stroke">#E8DDFF</color>
+    <color name="white">#FFFFFF</color>
+</resources>

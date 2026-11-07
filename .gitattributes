@@ -1,0 +1,17 @@
+# Normalise line endings in the repo; keep scripts usable on their platform.
+* text=auto eol=lf
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# ncnn model files are read verbatim - never touch their line endings
+*.param -text
+*.bin -text
+
+# binaries
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.apk binary
+*.so binary

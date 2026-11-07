@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">超分</string>
+    <string name="subtitle">本地 Real-ESRGAN · 完全离线</string>
+    <string name="preview">预览</string>
+    <string name="status_idle">选一张图开始</string>
+    <string name="label_model">模型</string>
+    <string name="label_cap">输出长边</string>
+    <string name="gpu_label">GPU 加速（Vulkan，失败自动回落 CPU）</string>
+    <string name="action_run">放大</string>
+    <string name="action_pick">选图</string>
+    <string name="action_save">保存</string>
+    <string name="action_diag">自检</string>
+    <string name="cat_button">猫</string>
+    <string name="cat_message">没什么，只是想让你看看我家猫。</string>
+    <string name="cat_empty">（照片没随仓库分发。把自己的图放进 app/src/main/assets/cats/ 就能看到）</string>
+</resources>

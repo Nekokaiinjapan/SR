@@ -1,0 +1,36 @@
+# ---- build outputs -------------------------------------------------------
+build-apk/
+app/build/
+native/build/
+*.apk
+*.log
+
+# native libs are built, not committed
+#   cd native && build_direct.bat arm64-v8a
+app/src/main/jniLibs/**/*.so
+
+# ncnn SDK is downloaded separately (~140MB), see README
+third_party/
+
+# generated docs
+README.html
+
+# personal photos (the cat easter egg) are not part of the repo
+app/src/main/assets/cats/
+
+# ---- local machine config ------------------------------------------------
+local.properties
+debug.keystore
+.gradle/
+gradle-home/
+*.iml
+.idea/
+
+# ---- misc ----------------------------------------------------------------
+*.idsig
+__pycache__/
+native/_*
+
+
+*.err
+

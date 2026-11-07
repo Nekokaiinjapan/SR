@@ -1,0 +1,37 @@
+Third-party notices
+===================
+
+This project's own source code is MIT licensed (see LICENSE). It bundles
+model weights and links against ncnn, which carry their own licenses.
+
+ncnn
+----
+Copyright (C) 2017 THL A29 Limited, a Tencent company.
+BSD 3-Clause License.
+https://github.com/Tencent/ncnn
+
+Real-ESRGAN model weights
+-------------------------
+The following files under app/src/main/assets/models/ come from the
+Real-ESRGAN project:
+
+  realesr-animevideov3-x2.param / .bin
+  realesr-animevideov3-x3.param / .bin
+  realesr-animevideov3-x4.param / .bin
+  realesrgan-x4plus-anime.param / .bin
+
+Copyright (c) 2021, Xintao Wang.
+BSD 3-Clause License.
+https://github.com/xinntao/Real-ESRGAN
+
+Personal photos
+---------------
+The cat photos shown by the easter-egg dialog are NOT part of this repository.
+When present locally they live under app/src/main/assets/cats/ (that path is
+git-ignored). They are personal photographs, not covered by the MIT license,
+and must not be reused or redistributed.
+
+Application icon
+----------------
+app/src/main/res/mipmap-xxxhdpi/ic_launcher.png and res/drawable/logo.png
+are original artwork for this project, covered by the MIT license.
